@@ -146,12 +146,12 @@ if __name__ == "__main__":
    #print("bou_ub:",len(bounds),len(bounds[0]))
    
    
-   #start = time.time()   
-   #analyze.optimize_lingo()
-   #cost = time.time() - start  
-   #print("耗时{:.2f}s.".format(cost))   
-   #analyze.consequence()
-   #analyze.show_lingo()
+   start = time.time()   
+   analyze.optimize_lingo()
+   cost = time.time() - start  
+   print("耗时{:.2f}s.".format(cost))   
+   analyze.consequence()
+   analyze.show_lingo()
    
    print(analyze.staff_recommend("F"))
    analyze.team_evaluate(["A1","A3","A5","A7","A9"], "F")
